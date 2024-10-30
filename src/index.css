@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 * {
+  scrollbar-width: none;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -ms-overflow-style: none;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+
+
 
 body {
   color: white;
@@ -122,3 +129,4 @@ canvas {
     @apply opacity-0 translate-y-[100px]
   }
 }
+
